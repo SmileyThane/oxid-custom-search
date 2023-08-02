@@ -1,0 +1,39 @@
+{
+  "name": "smileythane/oxid-custom-search",
+  "type": "oxideshop-module",
+  "keywords": ["oxid", "modules", "eShop", "search"],
+  "description": "Custom search for Oxid Eshop",
+  "licence": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Hleb Prakhnitski",
+      "email": "thane.crios@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "oxid-esales/oxideshop-ce": "^v6.5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6",
+    "squizlabs/php_codesniffer": "^3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "SmileyThane\\OxidCustomSearch\\": "src"
+    }
+  },
+  "extra": {
+    "oxideshop": {
+      "target-directory": "projekteins/pr_custom_search",
+      "blacklist-filter": [
+        "composer.json",
+        "*.md",
+        "*.dist",
+        "copy_this/**/*",
+        "src/**/*",
+        "tests/**/*"
+      ]
+    }
+  }
+}
