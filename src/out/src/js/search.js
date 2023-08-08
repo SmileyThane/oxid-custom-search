@@ -9,10 +9,7 @@ $('[data-js=searchParam]').on('input', function () {
         "link"
     ]
     let headers = {
-        "Content-Type": "application/json",
-        "Access-Control-Request-Headers": "x-requested-with",
-        "Access-Control-Allow-Headers": "x-requested-with",
-        "Access-Control-Allow-Origin": "*"
+        "Content-Type": "application/json"
     }
 
     if ($('#customSearchAuth').val().length > 0) {
